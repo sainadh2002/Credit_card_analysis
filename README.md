@@ -1,15 +1,7 @@
-1. **
-
-
-**TASK-1**
-
 
 `   `**CREDIT FLOW: SMART ETL FOR CREDIT CARD DATA**
 
 **				
-
-![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.001.png)                ![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.002.jpeg)
-**
 
 
 `                    `**Submitted By: UPPUTHOLLA VENKATA SAINADH**
@@ -20,46 +12,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-**CONTENTS**
-
-1. **INTRODUCTION** 
-
-1. **OBJECTIVE**
-   1. extracting data 
-   1. exploring data
-   1. Data Pre-processing 
-
-1. **VISUALIZATION USING TABLEAU**
-   1. over view of tableau
-   1. Age interval
-   1. region\_wise \_income
-   1. loan\_based\_occupation
-   1. card\_utilisatioin based on occupation
-   1. debit\_ratio
-   1. good or bad \_based\_on\_gender\_region
-   1. occupation based on gender and income with card utilization
-   1. occupation\_ monthly\_income
-   1. dependence based on occupation with rent or own house
-
-1. **CREATING THE DASHBOARD**
-
-1. **IDENTIFYING GOOD AND BAD CUSTOMERS**
-   1. Potential Good Customers
-   1. Strategy Developments
-   1. Potential Bad Customers:
-   1. Strategy Developments
-
-1. **CONCLUSION**
-**
 
 
 **1.INTRODUCTION**
@@ -193,15 +145,8 @@ Tableau Public is a valuable tool for anyone who wants to explore data, communic
 
 
 **3.2.AGE\_INTERVEL**
+![AGE_INTERVEL](https://github.com/user-attachments/assets/c333f590-cf63-432e-93b1-0f55ea84f0b4)
 
-
-
-import { ocr } from 'llama-ocr';
-
-const markdown = await ocr({
-  filePath: "https://napkinsdev.s3.us-east-1.amazonaws.com/next-s3-uploads/26cee61a-203e-41e6-b0c6-993a39d00e04/AGE_INTERVEL.png",
-  apiKey: process.env.TOGETHER_API_KEY
-});
 
 **Observations:**
 
@@ -227,7 +172,7 @@ const markdown = await ocr({
 
 **3.3. REGION\_WISE \_INCOME**
 
-![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.006.png)
+![Region_wise income](https://github.com/user-attachments/assets/f622c339-59a7-4995-aada-26e67c871a1f)
 
 **Observations:**
 
@@ -242,8 +187,7 @@ const markdown = await ocr({
 
 **3.4. LOAN\_BASED\_OCCUPATION**
 
-
-![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.007.png)
+![LONES_BASED_OCCUPATION](https://github.com/user-attachments/assets/d345dec0-55d4-46fa-80ea-e2abacc6c1e9)
 
 
 **Observations:**
@@ -256,10 +200,6 @@ const markdown = await ocr({
 - **Highest Total Credit Lines and Loans:**
   - **Salf - Emp** appears to have the highest number of total credit lines and loans (green bars) among the rented occupations.
   - **Sales - Emp** also appears to have the highest number of total credit lines and loans (green bars) among the owner-occupied occupations.
-
-
-
-
 
 - **Lowest Total Credit Lines and Loans:**
   - **Officer 3** appears to have the lowest number of total credit lines and loans (green bars) among the rented occupations.
@@ -277,8 +217,8 @@ const markdown = await ocr({
 
 **3.5.CARD\_UTILISATIOIN BASED ON OCCUPATION**
 
+![BASED_ON_UTILIZATION](https://github.com/user-attachments/assets/222b0721-9c14-47a9-8c98-ca3d5cd03a92)
 
-![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.008.png)
 
 **Observations:**
 
@@ -292,7 +232,8 @@ const markdown = await ocr({
 **3.6. DEBIT\_RATIO**
 
 
-![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.009.png)
+![DEBIT_RATIO](https://github.com/user-attachments/assets/1f982d86-3837-49ca-883c-799ac88ae1b6)
+
 
 **Observations:**
 
@@ -307,12 +248,9 @@ It has the smallest slice in the pie chart, indicating that the sum of debt rati
 
 
 
-
-
-
 **3.7. GOOD OR BAD \_BASED\_ON\_GENDER\_REGION**
 
-`                                  `![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.010.png)
+![GOOD_BAD_REGION_GENDER](https://github.com/user-attachments/assets/a291d6b9-c8ec-4908-a092-c0cdad478b0c)
 
 **Observations:**
 
@@ -332,7 +270,8 @@ This suggests that the West region has a relatively high overall debt ratio, wit
 
 **3.8. OCCUPATION BASED ON GENDER AND INCOME WITH CARD UTILIZATION** 
 
-![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.011.png)
+
+![OCCUPATION_GEN_INCOME](https://github.com/user-attachments/assets/6cab05ef-365b-4759-8611-0be2211d9f8a)
 
 **Observations**:
 
@@ -347,7 +286,8 @@ This suggests that the West region has a relatively high overall debt ratio, wit
 
 **3.9 OCCUPATION\_ MONTHLY\_INCOME**
 
-`      `![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.012.png)
+![OCUPATION_MONTHLY_INCOME](https://github.com/user-attachments/assets/c4342133-4ad5-494c-8056-463281931a2f)
+
 
 **Observations**:
 
@@ -361,7 +301,8 @@ This suggests that the West region has a relatively high overall debt ratio, wit
 
 **3.10. DEPENDENCE BASED ON OCCUPATION WITH RENT OR OWN HOUSE**
 
-`     `![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.013.png)
+
+![DEPENDENCE_OCCUPATION](https://github.com/user-attachments/assets/b8c51ab7-3dad-4b51-a144-d8f120cab7ec)
 
 **Observations:**
 
@@ -372,7 +313,8 @@ This suggests that the West region has a relatively high overall debt ratio, wit
 - The number of dependents appears to vary slightly between individuals who own their houses and those who rent. For example, "Self-Emp" individuals who own their houses have a higher number of dependents compared to those who rent.
 - Overall, the visualization effectively communicates the relationship between occupation, housing status, and the number of dependents, highlighting the variations in the number of dependents across different combinations of these factors.
 
-`                         `**4.CREATING THE DASHBOARD	![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.014.png)**
+![credit_dashboard](https://github.com/user-attachments/assets/bdc58f56-2cf5-4637-ad0e-1599d0109261)
+
 
 **Main Key Points from the Dashboard:**
 
@@ -401,7 +343,8 @@ This suggests that the West region has a relatively high overall debt ratio, wit
 
 - "Self-Emp" individuals have the highest number of dependents across both housing statuses.
 
-`                    `**5. IDENTIFYING GOOD AND BAD CUSTOMERS**
+
+**5. IDENTIFYING GOOD AND BAD CUSTOMERS**
 
 **5.1 Potential Good Customers:**
 
@@ -447,16 +390,6 @@ This suggests that the West region has a relatively high overall debt ratio, wit
 - External Collection Agencies: Outsourcing debt collection to third-party agencies.
 - Reporting negative payment history to credit bureaus, which can negatively impact the customer's credit score.
 
-  .
-
-
-
-
-
-
-
-
-
 
 
 
@@ -471,5 +404,5 @@ In conclusion, credit card users can be broadly categorized as "good" or "bad" b
   We can go through my project work which we can understand more information on project. Here is the project link 
 
 <https://public.tableau.com/app/profile/venkata.sainadh.upputholla/viz/CREDIT_CARD/AGE_INTERVEL?publish=yes>
-2
+
 
