@@ -1,12 +1,65 @@
+1. **
 
-**CREDIT FLOW: SMART ETL FOR CREDIT CARD DATA**
 
-**Submitted By: UPPUTHOLLA VENKATA SAINADH**
+**TASK-1**
 
-**Mail:** [**sainadhupputholla2002@gmail.com**](mailto:sainadhupputholla2002@gmail.com)
 
-**Role: DATA ANALYST  
-<br/><br/>**
+`   `**CREDIT FLOW: SMART ETL FOR CREDIT CARD DATA**
+
+**				
+
+![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.001.png)                ![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.002.jpeg)
+**
+
+
+`                    `**Submitted By: UPPUTHOLLA VENKATA SAINADH**
+
+`                     `**Mail: [sainadhupputholla2002@gmail.com**](mailto:sainadhupputholla2002@gmail.com)**
+
+`                     `**Role: DATA ANALYST** 
+
+
+
+
+
+
+
+
+
+
+
+
+**CONTENTS**
+
+1. **INTRODUCTION** 
+
+1. **OBJECTIVE**
+   1. extracting data 
+   1. exploring data
+   1. Data Pre-processing 
+
+1. **VISUALIZATION USING TABLEAU**
+   1. over view of tableau
+   1. Age interval
+   1. region\_wise \_income
+   1. loan\_based\_occupation
+   1. card\_utilisatioin based on occupation
+   1. debit\_ratio
+   1. good or bad \_based\_on\_gender\_region
+   1. occupation based on gender and income with card utilization
+   1. occupation\_ monthly\_income
+   1. dependence based on occupation with rent or own house
+
+1. **CREATING THE DASHBOARD**
+
+1. **IDENTIFYING GOOD AND BAD CUSTOMERS**
+   1. Potential Good Customers
+   1. Strategy Developments
+   1. Potential Bad Customers:
+   1. Strategy Developments
+
+1. **CONCLUSION**
+**
 
 
 **1.INTRODUCTION**
@@ -26,32 +79,34 @@ Credit cards offer numerous benefits when used responsibly. They provide conveni
 **Potential Risks:**
 
 1. Debt.
-2. High Interest Rates
-3. Identity Theft
-4. Impulse Spending
-5. Fee Charges
+1. High Interest Rates
+1. Identity Theft
+1. Impulse Spending
+1. Fee Charges
 
-Overall, credit cards can be a valuable financial tool when used responsibly. It is important to understand the terms and conditions of your credit card, use it within your budget, and pay your balance in full and on time each month to avoid the negative consequences of debt.
+   ` `Overall, credit cards can be a valuable financial tool when used responsibly. It is important to understand the terms and conditions of your credit card, use it within your budget, and pay your balance in full and on time each month to avoid the negative consequences of debt.
 
-**2.OBJECTIVE**
 
-The main objective for this project is data source, for project the data should be clean without any missing values and outliers. For that purpose, before starting the project we want to check the data
 
-2.1 **extracting data**
+   **2.OBJECTIVE**
 
-The data which I used in this project or task is collected from the GitHub and extracted that data for my project purpose.
+   The main objective for this project is data source, for project the data should be clean without any missing values and outliers. For that purpose, before starting the project we want to check the data  
 
-Here is the data set link:
+   2\.1 **extracting data** 
 
-[https://github.com/sainadh2002/Credit_card_analysis/blob/main/creditcard.csv](https://github.com/sainadh2002/Credit_card_analysis/blob/main/creditcard.csv%20)
+   The data which I used in this project or task is collected from the GitHub and extracted that data for my project purpose. 
 
-After extracting I observed that there are 150002 rows × 18 columns which is a large data set.
+   Here is the data set link:
 
-**2.2 exploring data: understanding what data contains**
+   [https://github.com/sainadh2002/Credit_card_analysis/blob/main/creditcard.csv](https://github.com/sainadh2002/Credit_card_analysis/blob/main/creditcard.csv%20) 
 
-Data exploration is the initial step in the data analysis process where you delve into a dataset to gain a comprehensive understanding of its characteristics, structure, and potential insights. Let's break down what I can understand from the data:
+   After extracting I observed that there are 150002 rows × 18 columns which is a large data set.
 
-**Column names and their meanings**:
+   **2.2 exploring data: understanding what data contains**
+
+   Data exploration is the initial step in the data analysis process where you delve into a dataset to gain a comprehensive understanding of its characteristics, structure, and potential insights. Let's break down what I can understand from the data:
+
+   **Column names and their meanings**:
 
 - **NPA Status**: This likely indicates whether the individual is a Non-Performing Asset (NPA). NPA typically refers to loans or debts where the borrower has defaulted or is significantly behind on payments.
 - **Revolving Utilization of Unsecured Lines**: This likely represents the percentage of the available credit limit that is being used on unsecured lines of credit.
@@ -63,6 +118,8 @@ Data exploration is the initial step in the data analysis process where you delv
 - **Occupation**: The individual's occupation or profession.
 - **Education**: The individual's highest level of education.
 - **Days Past Due Not Worse**: This likely represents the number of days that the individual's most recent payment is overdue, but not considered "worse".
+
+
 - **Monthly Income Loans**: This likely represents the ratio of monthly income to the amount of outstanding loans.
 - **Number of Open Credit Lines**: The number of active credit lines the individual has (e.g., credit cards, loans).
 - **Number of Times 90 Days Late**: The number of times the individual has been 90 days or more late on a payment.
@@ -77,37 +134,41 @@ Data preprocessing is a crucial step in the data analysis and machine learning p
 
 First, we want to find out how many missing values are there in every column using machine learning concept and python libraries. Here, is the null values. As shown in below for every column how many null values are presented, we can see below.
 
+`           `![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.003.png)
+
 
 
 **Key Steps in Data Preprocessing**:
 
 **Data Cleaning:**
 
-- - Handling Missing Values:
-        - Imputation: Replacing missing values with estimated values (e.g., mean, median, mode.
-        - Replacing missing values using concepts like fillna.
-        - Removing repeated values or column present in the data using dropna.
-        - Removing duplicate values in the data.
-    - Outlier Detection and Treatment:
-      - Identifying outliers: Using visualization techniques (box plots, scatter plots) or statistical methods (Z-score, IQR).
-      - Handling outliers: Removing them, transforming them using python libraries and ml concepts.
+1. Handling Missing Values: 
+   1. Imputation: Replacing missing values with estimated values (e.g., mean, median, mode.
+   1. Replacing missing values using concepts like fillna.
+   1. Removing repeated values or column present in the data using dropna.
+   1. Removing duplicate values in the data.  
+1. Outlier Detection and Treatment: 
+   1. Identifying outliers: Using visualization techniques (box plots, scatter plots) or statistical methods (Z-score, IQR).
+   1. Handling outliers: Removing them, transforming them using python libraries and ml concepts.
 
 **Tools and Libraries:**
 
-- Python: Pandas, NumPy, Scikit-learn, marplot.
+- Python: Pandas, NumPy, Scikit-learn, marplot. 
 - Tool – google Collaboratory
 
 **CODE LINK:**
 
-**Here is the code link please go through this link.**
+`    `**Here is the code link please go through this link.**
 
-[**https://github.com/sainadh2002/Credit_card_analysis/blob/main/credit_card.py**](https://github.com/sainadh2002/Credit_card_analysis/blob/main/credit_card.py)
+`     `**[https://github.com/sainadh2002/Credit_card_analysis/blob/main/credit_card.py**](https://github.com/sainadh2002/Credit_card_analysis/blob/main/credit_card.py)**
 
 NOW, after clean the data and removing outliers, the data is ready to make visualizations here is the data set which are cleaned.
 
-[https://github.com/sainadh2002/Credit_card_analysis/blob/main/credit_card.csv](%20%20%20%20%20https:/github.com/sainadh2002/Credit_card_analysis/blob/main/credit_card.csv)
+[     https://github.com/sainadh2002/Credit_card_analysis/blob/main/credit_card.csv](%20%20%20%20%20https:/github.com/sainadh2002/Credit_card_analysis/blob/main/credit_card.csv)
 
-3.**VISUALIZATION USING TABLEAU**
+
+
+`                                `3.**VISUALIZATION USING TABLEAU**
 
 **3.1 OVER VIEW OF TABLEAU**
 
@@ -125,8 +186,22 @@ In This project we use the software called Tableau public. Tableau Public is a f
 Tableau Public is a valuable tool for anyone who wants to explore data, communicate insights, and collaborate with others. It's a great option for individuals, students, and small businesses.
 
 
-**3.2.AGE_INTERVEL**
+`           `![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.004.png)
 
+
+
+
+
+**3.2.AGE\_INTERVEL**
+
+
+
+import { ocr } from 'llama-ocr';
+
+const markdown = await ocr({
+  filePath: "https://napkinsdev.s3.us-east-1.amazonaws.com/next-s3-uploads/26cee61a-203e-41e6-b0c6-993a39d00e04/AGE_INTERVEL.png",
+  apiKey: process.env.TOGETHER_API_KEY
+});
 
 **Observations:**
 
@@ -136,7 +211,7 @@ Tableau Public is a valuable tool for anyone who wants to explore data, communic
 
 **Highest Count:**
 
-- The age group with the highest count appears to be around the **49 years** range. This is indicated by the tallest bar in the histogram which means the people with this age is more.
+- The age group with the highest count appears to be around the **49 years** range. This is indicated by the tallest bar in the histogram which means the people with this age  is more.
 
 **Lowest Count:**
 
@@ -150,16 +225,26 @@ Tableau Public is a valuable tool for anyone who wants to explore data, communic
 
 - The visualization ends with the **highest age group** depicted on the right side of the x-axis ended to 109.
 
-**3.3. REGION_WISE \_INCOME**
+**3.3. REGION\_WISE \_INCOME**
 
+![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.006.png)
 
 **Observations:**
 
 - r**egional Income Disparity:** The visualization clearly shows a significant disparity in monthly income across different regions. The **Central** and **West** regions have markedly **higher monthly incomes** compared to the East, South, and North regions.
+
 - **Gender Disparity:** Within each region, there is a noticeable difference in monthly income between males and females. In most regions, males tend to have higher monthly incomes than females. This disparity is particularly evident in the Central and West regions, where the difference in income between males and females is substantial.
+
+
 - **Overall Trend:** The visualization suggests a general trend of higher monthly incomes in the Western and Central regions compared to the Eastern, Southern, and Northern regions. This trend holds true for both males and females.
 
-**3.4. LOAN_BASED_OCCUPATION**
+
+
+**3.4. LOAN\_BASED\_OCCUPATION**
+
+
+![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.007.png)
+
 
 **Observations:**
 
@@ -167,21 +252,33 @@ Tableau Public is a valuable tool for anyone who wants to explore data, communic
 - **Grouping by Housing Status:** The data is further grouped by whether the individual rents or owns their house.
 - **Occupational Variation:** There seems to be significant variation in the number of credit lines and loans across different occupations. Some occupations have higher numbers of credit lines and loans than others.
 - **Housing Status Impact:** The number of credit lines and loans also appears to differ between individuals who rent and those who own their houses.
+
 - **Highest Total Credit Lines and Loans:**
   - **Salf - Emp** appears to have the highest number of total credit lines and loans (green bars) among the rented occupations.
   - **Sales - Emp** also appears to have the highest number of total credit lines and loans (green bars) among the owner-occupied occupations.
+
+
+
+
+
 - **Lowest Total Credit Lines and Loans:**
   - **Officer 3** appears to have the lowest number of total credit lines and loans (green bars) among the rented occupations.
   - **Officer 3** also appears to have the lowest number of total credit lines and loans (green bars) among the owner-occupied occupations.
+
 - **Highest Real Estate Loans/Lines:**
   - **Sales - Emp** appears to have the highest number of real estate loans or lines (orange bars) among the owner-occupied occupations.
   - **Officer 3** appears to have the highest number of real estate loans or lines (orange bars) among the rented occupations.
+
 - **Lowest Real Estate Loans/Lines:**
   - **Officer 1** appears to have the lowest number of real estate loans or lines (orange bars) among the owner-occupied occupations.
   - **Officer 2** appears to have the lowest number of real estate loans or lines (orange bars) among the rented occupations.
 
-**3.5.CARD_UTILISATIOIN BASED ON OCCUPATION**
 
+
+**3.5.CARD\_UTILISATIOIN BASED ON OCCUPATION**
+
+
+![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.008.png)
 
 **Observations:**
 
@@ -190,7 +287,12 @@ Tableau Public is a valuable tool for anyone who wants to explore data, communic
 - Based on the visualization, the occupation with the **highest revolving utilization of credit cards appears to be "Self-Emp".** This is indicated by the largest rectangle in the tree map, suggesting that this group has the highest proportion of credit card balances relative to their credit limits.
 - The occupation with the **lowest revolving utilization of credit cards is likely "Officer 2".** This group has the smallest rectangle in the tree map, suggesting the lowest proportion of credit card balances relative to their credit limits.
 
-**3.6. DEBIT_RATIO**
+
+
+**3.6. DEBIT\_RATIO**
+
+
+![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.009.png)
 
 **Observations:**
 
@@ -198,12 +300,19 @@ Tableau Public is a valuable tool for anyone who wants to explore data, communic
 - **Debt Ratio:** The size of each slice is proportional to the sum of debt ratios for that occupation. Debt ratio means monthly debt payments, Alimony living costs divided by monthly gross income.
 - **Occupations:** The pie chart shows the distribution across five occupations: "Self-Emp," "Non-Officer," "Officer 3," "Officer 2," and "Officer 1."
 - **"Self-Emp**" has the largest slice, indicating that this occupation group has the highest sum of debt ratios.
-- **Colour Coding:** The slices are color-coded the colour code defines the occupation.
-- Based on the provided visualization, the occupation with the **least debt ratio appears to be "Officer 2".**
+- **Colour Coding:** The slices are color-coded the colour code defines the  occupation.
+- ` `Based on the provided visualization, the occupation with the **least debt ratio appears to be "Officer 2".**
 
 It has the smallest slice in the pie chart, indicating that the sum of debt ratios for this occupation is the lowest among the five groups.
 
-**3.7. GOOD OR BAD \_BASED_ON_GENDER_REGION**
+
+
+
+
+
+**3.7. GOOD OR BAD \_BASED\_ON\_GENDER\_REGION**
+
+`                                  `![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.010.png)
 
 **Observations:**
 
@@ -219,8 +328,11 @@ It has the smallest slice in the pie chart, indicating that the sum of debt rati
 
 This suggests that the West region has a relatively high overall debt ratio, with a significant portion attributed to both "Good" and "Bad" categories.
 
-**3.8. OCCUPATION BASED ON GENDER AND INCOME WITH CARD UTILIZATION**
 
+
+**3.8. OCCUPATION BASED ON GENDER AND INCOME WITH CARD UTILIZATION** 
+
+![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.011.png)
 
 **Observations**:
 
@@ -231,20 +343,25 @@ This suggests that the West region has a relatively high overall debt ratio, wit
 - Gender Disparity: There appears to be a noticeable difference in the size of rectangles between males and females within the same occupation, suggesting a potential gender-based income disparity.
 - Utilisation of card usage also show In the visualisation.
 
-**3.9 OCCUPATION_ MONTHLY_INCOME**
 
+
+**3.9 OCCUPATION\_ MONTHLY\_INCOME**
+
+`      `![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.012.png)
 
 **Observations**:
 
-- **Heatmap Visualization**: The visualization uses a heatmap to represent the sum of monthly income across different occupations and education levels.
-- The colour gradient ranges from red to green, visually representing the sum of monthly income, with darker shades indicating higher income.
-- The occupations are categorized into "Non-officer," "Officer 1," "Officer 2," "Officer 3," and "Self-Emp," and the education levels are grouped into "Graduate," "Matric," "PhD," "Post-Grad," and "Professional."
-- Income Variation: There is significant variation in the sum of monthly income across different occupations and education levels. Some cells are coloured darker, indicating higher income levels.
-- The "Self-Emp" and "Non-Officer" occupations generally have larger income values compared to the "Officer" occupations across most education levels.
-- The impact of education on income seems to vary across occupations. For example, "Self-Emp" appears to have a strong correlation between education and income, with higher income levels associated with higher education levels.
-- the visualization effectively communicates the relationship between occupation, education, and monthly income, highlighting the variations in income across different combinations of these factors.
+- **Heatmap Visualization**: The visualization uses a heatmap to represent the sum of monthly income across different occupations and education levels. 
+- The colour gradient ranges from red to green, visually representing the sum of monthly income, with darker shades indicating higher income. 
+- The occupations are categorized into "Non-officer," "Officer 1," "Officer 2," "Officer 3," and "Self-Emp," and the education levels are grouped into "Graduate," "Matric," "PhD," "Post-Grad," and "Professional." 
+- Income Variation: There is significant variation in the sum of monthly income across different occupations and education levels. Some cells are coloured darker, indicating higher income levels. 
+- The "Self-Emp" and "Non-Officer" occupations generally have larger income values compared to the "Officer" occupations across most education levels. 
+- The impact of education on income seems to vary across occupations. For example, "Self-Emp" appears to have a strong correlation between education and income, with higher income levels associated with higher education levels. 
+- the visualization effectively communicates the relationship between occupation, education, and monthly income, highlighting the variations in income across different combinations of these factors. 
 
 **3.10. DEPENDENCE BASED ON OCCUPATION WITH RENT OR OWN HOUSE**
+
+`     `![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.013.png)
 
 **Observations:**
 
@@ -255,36 +372,36 @@ This suggests that the West region has a relatively high overall debt ratio, wit
 - The number of dependents appears to vary slightly between individuals who own their houses and those who rent. For example, "Self-Emp" individuals who own their houses have a higher number of dependents compared to those who rent.
 - Overall, the visualization effectively communicates the relationship between occupation, housing status, and the number of dependents, highlighting the variations in the number of dependents across different combinations of these factors.
 
-**4.CREATING THE DASHBOARD**
+`                         `**4.CREATING THE DASHBOARD	![](Aspose.Words.acb7b12d-8087-4839-8bba-0b666d175aca.014.png)**
 
 **Main Key Points from the Dashboard:**
 
-**1\. Income Distribution:**
+**1. Income Distribution:**
 
 - **Age Distribution:** The age group with the highest concentration appears to be between 35-49 years.
 - **Regional Income:** There's a significant income disparity across regions, with the West and Central regions showing higher monthly incomes compared to the East, South, and North.
 - **Gender Disparity:** Within each region, males tend to have higher monthly incomes than females.
 
-**2\. Loan and Credit Utilization:**
+**2. Loan and Credit Utilization:**
 
 - **Credit Utilization:** "Self-Emp" individuals exhibit the highest revolving credit utilization, indicating they are using a significant portion of their available credit.
 - **Loan Usage:** "Self - Emp" appears to have the highest number of both open credit lines and loans, as well as real estate loans.
 
-**3\. Debt Ratios:**
+**3. Debt Ratios:**
 
 - **High Debt:** "Self-Emp" individuals have the highest sum of debt ratios, suggesting a higher level of overall debt.
 - **Lowest Debt:** "Officer 2" has the lowest sum of debt ratios.
 
-**4\. Income and Education:**
+**4. Income and Education:**
 
 - "Self-Emp" and "Non-Officer" occupations generally have higher monthly incomes across most education levels.
 - Higher education levels are associated with higher income levels, particularly for "Self-Emp" individuals.
 
-**5\. Dependents:**
+**5. Dependents:**
 
 - "Self-Emp" individuals have the highest number of dependents across both housing statuses.
 
-**5\. IDENTIFYING GOOD AND BAD CUSTOMERS**
+`                    `**5. IDENTIFYING GOOD AND BAD CUSTOMERS**
 
 **5.1 Potential Good Customers:**
 
@@ -306,6 +423,11 @@ This suggests that the West region has a relatively high overall debt ratio, wit
 - Improved Credit Score: Continued responsible credit card use can further enhance creditworthiness.
 - Easier Loan Approvals: Better chances of securing loans at favourable terms.
 
+
+
+
+
+
 **5.3 Potential Bad Customers:**
 
 - **High Debt Ratio:** Customers with high debt ratios, especially those in the "Self-Emp" category, may be at higher risk of default.
@@ -313,7 +435,9 @@ This suggests that the West region has a relatively high overall debt ratio, wit
 - **Unstable Income:** Individuals with unstable or low income, such as those in certain regions or with lower education levels, may be at higher risk of defaulting on loans.
 - **Negative Payment History:** A history of late payments or defaults on loans and credit cards is a strong indicator of bad creditworthiness.
 - Due to dependency on self-emp there living cost increases and there are unable to pay money in time and they can’t maintain the credit card.
-    1. **Strategy Development:**
+
+4. **Strategy Development:**
+
 - Increased Fees and Interest Rates: Charging higher fees for missed payments.
 - Penalty APRs: Applying significantly higher interest rates on outstanding balances after missed payments.
 - Over-the-Limit Fees: Charging fees for exceeding the credit limit.
@@ -323,14 +447,29 @@ This suggests that the West region has a relatively high overall debt ratio, wit
 - External Collection Agencies: Outsourcing debt collection to third-party agencies.
 - Reporting negative payment history to credit bureaus, which can negatively impact the customer's credit score.
 
-.
+  .
+
+
+
+
+
+
+
+
+
+
+
 
 **6.CONCLUSION**
 
 In conclusion, credit card users can be broadly categorized as "good" or "bad" based on their creditworthiness and usage behaviour. Good credit card users demonstrate responsible financial habits by making timely payments, staying within credit limits, and maintaining a low debt-to-credit ratio. This behaviour is rewarded by banks through benefits like lower interest rates, higher credit limits, and exclusive rewards. Conversely, bad credit card users struggle with timely payments, carry high balances, and often exceed their credit limits. This behaviour results in penalties, increased interest rates, and potential damage to their credit score. Responsible credit card usage is crucial for building a strong financial foundation and avoiding the pitfalls of debt.
+**
+
 
 - **Project work sheet:**
 
-We can go through my project work which we can understand more information on project. Here is the project link
+  We can go through my project work which we can understand more information on project. Here is the project link 
 
 <https://public.tableau.com/app/profile/venkata.sainadh.upputholla/viz/CREDIT_CARD/AGE_INTERVEL?publish=yes>
+2
+
